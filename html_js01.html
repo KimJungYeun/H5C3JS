@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<title>Web</title>
+<html>
+    <head>
+        <h1>JavaScript_실행</h1>
+        <style>
+            .c1{
+                background-color: bisque;
+                font: size 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="./index.html"> <img src="./web.gif" width="100px" height="70px"></a>
+        <ul>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="./css.html">CSS</a></li>
+            <li><a href="./Javascript.html">JavaScript</a></li>
+        </ul>
+        <ol>
+            <li><a href= "./html_js01.html">Javascript 실행</a></li>           
+            <li><a href= "./html_js02.html">함수</a></li>
+            <li><a href= "./html_js03.html">제어문 & 배열</a></li>
+            <li><a href= "./html_js05.html">객체</a></li>
+            <li><a href= "./html_js06.html">이벤트</a></li> 
+            <li><a href= "./html_js07.html">JQuery</a></li>         
+            <li><a href= "./html_js08.html">Control ID, Class</a></li>    
+        </ol>
+        <hr>
+        <p class="c1">HTML 파일 내부에 정의 </p>
+            <script>
+                document.write("<div style='color: blue; font-size: 20px;'>내부 자바스크립트</div>");
+            </script>        
+        <p class="c1">HTML 파일 외부에 정의 </p>
+            <script src="./external.js"></script>
+            <script>
+                document.write("<p>external.js실행<p>");
+            </script>
+
+       
+    </body>
+</html>

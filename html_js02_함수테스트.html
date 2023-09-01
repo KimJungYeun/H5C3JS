@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<title>Web</title>
+<html>
+    <head>
+        <h1>JavaScript</h1>
+    </head>
+
+    <body>
+        <a href="./index.html"> <img src="./web.gif" width="100px" height="70px"></a>
+        <ul>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="./css.html">CSS</a></li>
+            <li><a href="./Javascript.html">JavaScript</a></li>
+        </ul>
+        <ol>
+            <li><a href= "./html_js01.html">Javascript 실행</a></li>           
+            <li><a href= "./html_js02.html">함수</a></li>
+            <li><a href= "./html_js03.html">제어문</a></li>
+            <li><a href= "./html_js04.html">배열</a></li>
+            <li><a href= "./html_js05.html">객체</a></li>
+            <li><a href= "./html_js06.html">이벤트</a></li>            
+        </ol>
+
+        <p>
+        <script>
+    function add() {
+        var sum=1;
+        return sum;  
+    }
+    function add(x) {
+        var sum=x+1;
+        return sum;  
+    }
+    function add(x, y) {
+        var sum=x+y;
+        return sum;  
+    }
+    function add(x, y, z) {
+        var sum=x+y+z;
+        return sum;  
+    }
+    var r0=add();          
+    var r1=add(1);         
+    var r2=add(2, 3);      
+    var r3=add(4, 5 ,6);   
+    var r4=add(7, 8, 9, 10);  
+    document.write("함수 호출 인자 없음 : " + r0 + "<p/>");
+    document.write("함수 호출 인자 부족 : " + r1 + "<p/>");
+    document.write("함수 호출 인자 부족 : " + r2 + "<p/>");
+    document.write("정상적인 함수 호출 : " + r3 + "<p/>");
+    document.write("7, 8, 9만 인자값으로 적용 : " + r4 + "<p/>");
+</script>
+
+        
+        </p>
+       
+    </body>
+</html>

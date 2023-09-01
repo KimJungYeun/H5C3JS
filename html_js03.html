@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<title>Web</title>
+<html>
+    <head>
+        <h1>JavaScript_제어문과 배열</h1>
+        <style>
+            .c1{
+                background-color: bisque;
+                font: size 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="./index.html"> <img src="./web.gif" width="100px" height="70px"></a>
+        <ul>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="./css.html">CSS</a></li>
+            <li><a href="./Javascript.html">JavaScript</a></li>
+        </ul>
+       
+            <ol>
+                <li><a href= "./html_js01.html">Javascript 실행</a></li>           
+                <li><a href= "./html_js02.html">함수</a></li>
+                <li><a href= "./html_js03.html">제어문 & 배열</a></li>
+                <li><a href= "./html_js05.html">객체</a></li>
+                <li><a href= "./html_js06.html">이벤트</a></li>    
+                <li><a href= "./html_js07.html">JQuery</a></li> 
+                <li><a href= "./html_js08.html">Control ID, Class</a></li> 
+
+            </ol>
+    
+        <hr>
+        <p > <div class="c1">for & 배열</div><br>
+            <script>
+                var city=["Seoul", , "Busan", , "Incheon"];    // 공백 리터럴 포함
+                function printArr() {
+                    var i; 
+                    for(i=0; i<city.length; i++) {
+                        document.write("배열 데이터 ["+ i + "] = " + city[i] + "<br>");  
+                    }
+                }
+                printArr();
+            </script>            
+        </p>
+        <p ><div class="c1">for & if & 배열객체</div><br>
+
+            <script>
+                var city=new Array("Seoul","Busan","Incheon"); 
+                function printArr() {
+                    if(city instanceof Array) {
+                        document.write("배열 객체가 생성되었습니다.<p/>");
+                        var i; 
+                        for(i=0; i<city.length; i++) {
+                            document.write("배열 데이터 ["+ i + "] = " + city[i] + "<br>");  
+                        }  
+                    }
+                    else {
+                        document.write("배열 객체가 아닙니다.<br>"); 
+                        document.write("데이터 : " + city + "<br>"); 
+                    }
+                }
+                printArr();   
+                document.write("<p/> city 변수 타입 : " + typeof city + "<br>");  
+                document.write("배열 객체 확인 결과 : " + Array.isArray(city) + "<br>");
+            </script>
+        </p>
+     
+    </body>
+</html>

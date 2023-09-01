@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<title>Web</title>
+<html>
+    <head>
+        <h1>JavaScript_제어문</h1>
+        <style>
+            .c1{
+                background-color: bisque;
+                font: size 2px;
+            }
+        </style>
+         <script>
+            function add() {
+                var image=document.createElement('img'); 
+                image.src='./web.gif';
+                image.width=100;
+                image.height=70;
+                document.body.appendChild(image);
+            };
+        </script>
+    </head>
+
+    <body>
+        <a href="./index.html"> <img src="./web.gif" width="100px" height="70px"></a>
+        <ul>
+            <li><a href="./html.html">HTML</a></li>
+            <li><a href="./css.html">CSS</a></li>
+            <li><a href="./Javascript.html">JavaScript</a></li>
+        </ul>
+        <ol>
+            <li><a href= "./html_js01.html">Javascript 실행</a></li>           
+            <li><a href= "./html_js02.html">함수</a></li>
+            <li><a href= "./html_js03.html">제어문 & 배열</a></li>
+            <li><a href= "./html_js05.html">객체</a></li>
+            <li><a href= "./html_js06.html">이벤트</a></li> 
+            <li><a href= "./html_js07.html">JQuery</a></li>    
+            <li><a href= "./html_js08.html">Control ID, Class</a></li>        
+        </ol>
+        <hr>        
+            <div class="c1">객체생성</div>
+            <p id="msg1"></p> 
+            <p id="msg2"></p> 
+            <p id="msg3"></p> 
+            <p id="msg4"></p>
+
+            <script>  
+                var obj={
+                    carcolor: 'white',       
+                    m1: function() {
+                        return "Hello Sonata";
+                    },
+                    m2: function(a) {
+                        var result=a;
+                        return result;
+                    },
+                    m3: function(a, b) {
+                        var result=a+b;
+                        return result;
+                    },                    
+                 } 
+            </script>
+   
+   <script>
+    document.getElementById("msg1").innerHTML=obj.m1();
+     document.getElementById("msg2").innerHTML=obj.m2(100);
+    document.getElementById("msg3").textContent=obj.m3(100, 200);
+    document.getElementById("msg4").textContent=obj.carcolor;  
+    </script>
+     <hr>
+     <a href="#" onclick="add()">[이미지 추가]</a> 
+    </body>
+</html>

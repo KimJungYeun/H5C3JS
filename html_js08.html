@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>Web</title>
+<html>
+    <head>
+        <h1>JavaScript_JQuery</h1>
+     
+    </head>
+
+    <body>
+        <a href="./index.html"> <img src="./web.gif" width="100px" height="70px"></a>
+        <ul>
+            <li><a href="./html.html" class="class1">HTML</a></li>
+            <li><a href="./css.html" class="class1" >CSS</a></li>
+            <li><a href="./Javascript.html"  class = "class1" >JavaScript</a></li>
+        </ul>
+        <ol>
+            <li><a href= "./html_js01.html">Javascript 실행</a></li>                       
+            <li><a href= "./html_js02.html">함수</a></li>
+            <li><a href= "./html_js03.html">제어문 & 배열</a></li>
+            <li><a href= "./html_js05.html">객체</a></li>
+            <li><a href= "./html_js06.html">이벤트</a></li>            
+            <li><a href= "./html_js07.html">JQuery</a></li> 
+            <li><a href= "./html_js08.html" id="id1">Control ID, Class</a></li> 
+
+        </ol>
+        <hr>
+        <script>
+            var li=document.getElementById('id1');          
+           li.style="color:red; background-color:grey";           
+        </script>
+         <script>
+            var lis=document.getElementsByClassName('class1');
+            for(var i=0;i<lis.length;i++){
+                lis[i].style.color = 'green';
+              
+            }
+        </script>
+      
+
+     
+    </body>
+</html>
